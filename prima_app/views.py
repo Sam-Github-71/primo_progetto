@@ -17,3 +17,5 @@ def variabili(request):
         'var3': 'Terza variabile'
     }
     return render(request, "variabili.html",context) 
+def index(request):
+     return render(request,"prima_app/index.html")
