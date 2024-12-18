@@ -8,6 +8,4 @@ from prima_app.views import index
 app_name="seconda_app"
 urlpatterns=[
   path('es_if', es_if, name='es_if')
-  
-
-]
+  ]
