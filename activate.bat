@@ -1,0 +1,1 @@
+C:\Users\5Ci\Documents\5Ci\Django\env\Scripts\activate
