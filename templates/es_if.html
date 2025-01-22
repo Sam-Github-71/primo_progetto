@@ -1,0 +1,55 @@
+<body>
+    <b>var1 = {{ var1 }}</b> <br/>
+    <b>var2 = {{ var2 }}</b> <br/>
+    <b>var3 = {{ var3 }}</b> <br/>
+
+    {% if var1 < var2 %}
+        <p><i>var1 e minore di var2</i></p>
+    {% endif %}
+
+    {% if var1 > var2 %}
+        <p><i>var1 e maggiore di var2</i></p>
+    {% endif %}
+
+
+    {% if var1 <= var2 %}
+        <p><i>var1 e minore o uguale di var2</i></p>
+    {% endif %}
+
+    {% if var1 >= var2 %}
+        <p><i>var1 e maggiore o uguale di var2</i></p>
+    {% endif %}
+
+
+    {% if var1 == var2 %}
+        <p><i>var1 e uguale a var2</i></p>
+    {% endif %}
+
+    {% if var1 != var2 %}
+        <p><i>var1 non e uguale a var2</i></p>
+    {% endif %}
+
+
+    {% if var1 < var2 and var1 < var3 %}
+        <p><i>var1 e e minore di var2 e minore di var3</i></p>
+    {% endif %}
+
+    {% if var1 < var2 or var3 < var2 %}
+        <p><i>var1 e minore di var2 o var3 e minre di var2</i></p>
+    {% endif %}
+
+
+    
+    {% if not var1 > var2 %}
+        <p><i>var1 non e maggiore di var2</i></p>
+    {% endif %}
+
+    def es_if(request):
+        context = {
+            'var1' : 200,
+            'var2' : 200,
+            'var3' : 300
+        }
+        return render(request, "es_if.html", context)
+
+</body>

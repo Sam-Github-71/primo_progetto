@@ -1,0 +1,56 @@
+<body>
+    cicla una sequenza usando <b>forloop.counter</b>
+    <br/>
+    {& for x in list2 &}
+        <i>{{ forloop.counter }}</i> : {{ x }}<br>
+    {& endfor &}
+    <br/>
+
+    cicla una sequenza usando <b>forloop.counter0</b>
+    <br/>
+    {& for x in list2 &}
+        <i>{{ forloop.counter0 }}</i> : {{ x }}<br>
+    {& endfor &}
+    <br/>
+
+    stampa il primo elemento di una sequenza usando<b>forloop.first</b>
+    <br/>
+    {& for x in list2 &}
+        {& if forloop.first &}
+        <i>Il primo elemento</i> : - {{ x }}<br>
+        {& endif &}
+    {& endfor &}
+    <br/>
+
+    stampa l'ultimo elemento di una sequenza usando<b>forloop.last</b>
+    <br/>
+    {& for x in list2 &}
+        {& if forloop.last &}
+        <i>L'ultimo</i> : - {{ x }}<br>
+        {& endif &}
+    {& endfor &}
+    <br/>
+
+    stampa il numero di elementi ancora da dover ciclare usando <b>forloop.revcounter</b>
+    <br/>
+    {& for x in list2 &}
+    <i>Numero di elementi ancora da dover ciclare</i> - {{ forloop.revcounter }}<br/>
+    <i> elemento </i> - {{ x }}<br/>
+    {{& endfor &}}
+    <br/>
+
+    stampa il numero di elementi ancora da dover ciclare usando <b>forloop.revcounter0</b>
+    <br/>
+    {& for x in list2 &}
+    <i>Numero di elementi ancora da dover ciclare</i> - {{ forloop.revcounter0 }}<br/>
+    <i> elemento </i> - {{ x }}<br/>
+    {{& endfor &}}
+    <br/>
+
+    Stampa la sequenza al contrario usando <b> reversed </b>, attributo del tag <b>for</b>
+    <br/>
+    {& for x in list2 reversed &}
+        <i> elemento </i> - {{ x }}<br/>
+    {& endfor &}
+
+</body>
