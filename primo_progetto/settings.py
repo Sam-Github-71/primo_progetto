@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'prima_app',
+    'news',
+    'corsi_formazione',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +61,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates/prima_app'),
                  os.path.join(BASE_DIR, 'templates'),
-                 os.path.join(BASE_DIR, 'seconda_app/templates/seconda_app')],
+                 os.path.join(BASE_DIR, 'seconda_app/templates/seconda_app'),
+                 os.path.join(BASE_DIR, 'corsi_formazione/templates/corsi_formazione'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,3 +129,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

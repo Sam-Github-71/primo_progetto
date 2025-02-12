@@ -1,0 +1,18 @@
+{% load static %}
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <Title>Index</Title>
+  </head>
+    <body>
+        <ol>
+            <li><a href="{% url 'corsi_formazione:view_a'%}"> Lista dei Corsi </a></li>
+            <li><a href="{% url 'corsi_formazione:view_b'%}"> Dettaggli Dei Corsi </a></li>
+            <li><a href="{% url 'corsi_formazione:view_c'%}"> Corsi che iniziano dopo il 01/05/25 </a></li>
+            <li><a href="{% url 'corsi_formazione:view_d'%}"> Corsi con meno di 20 posti disponibili </a></li>
+            <li><a href="{% url 'corsi_formazione:view_e'%}"> Corsi che terminano entro il 30/04/2025</a></li>
+            <li><a href="{% url 'corsi_formazione:view_f'%}"> Statistiche avanzate sui corsi </a></li>
+        </ol>
+    </body>
+</html>
